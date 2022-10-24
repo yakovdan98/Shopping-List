@@ -11,15 +11,18 @@
 <body>
   <div class="container" >
     <h1 >My Shopping List</h1>
-    <form class="shopping-list">
-      <label for="inputItem">Input things into your shopping list</label>
+    <form class="add-to" id="add-to">
+      <label for="inputItem">Input things into your shopping list</label><br>
       <input type="text" name="inputItem" id="inputItem">
-      <button type="button" id="add">Add</button>
+      <button type="submit" id="add">Add</button>
 
-      <label for="deleteItem">Delete an item</label>
+
+    </form>
+    <form class="remove-from" id="remove-from">
+      <label for="deleteItem">Delete an item</label><br>
       <input type="text" name="deleteItem" id="deleteItem">
 
-      <button type="button" id="delete">Delete</button>
+      <button type="submit" id="delete">Delete</button>
     </form>
     <h3>Shopping List:</h3>
     <ul></ul>
