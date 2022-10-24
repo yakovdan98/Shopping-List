@@ -7,6 +7,7 @@ function addItem(event) {
   const inputItem = document.getElementById("inputItem").value;
   document.getElementById("inputItem").value = "";
   list.push(inputItem);
+  list.sort();
 
   createList();
 };
@@ -24,7 +25,8 @@ function deleteItem(event) {
   else {
     window.alert("Item not in the list");
   }
-
+  list.sort();
+  
   createList();
 };
 
